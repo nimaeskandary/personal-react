@@ -10,7 +10,7 @@ class App extends Component {
         <Col sm={12}>
           <TopNavbar />
         </Col>
-        <Col sm={3} className="pull-left">
+        <Col sm={2} className="pull-left">
           <Sidebar ROUTES={this.props.ROUTES}/>
         </Col>
       </div>

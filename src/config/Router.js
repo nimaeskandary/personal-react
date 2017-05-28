@@ -33,8 +33,8 @@ function Router(props) {
             ROUTES.map((route) => (
                <Route exact={route.exact}
                       path={route.path}
-                      component={route.component}
-                      key={route.path} />
+                      render={(routerInfo) => <route.component routerInfo={routerInfo} componentRouteInfo={route}/>}
+                      key={route.path}/>
             ))
           }
         </div>
