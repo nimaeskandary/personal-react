@@ -3,18 +3,16 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import Home from '../views/Home'
 import About from '../views/About'
 
-const rootPath = (process.env.NODE_ENV === 'production') ? '~nne23' : '';
-
 const ROUTES = [
   {
-    path: rootPath + '/',
+    path: '/~nne23/',
     component: Home,
     exact: true,
     title: 'Home',
     icon: 'home'
   },
   {
-    path: rootPath + '/about',
+    path: '/~nne23/about',
     component: About,
     exact: false,
     title: 'About',
